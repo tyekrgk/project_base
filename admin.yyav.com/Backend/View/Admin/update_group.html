@@ -1,0 +1,45 @@
+<extend name="Template:commoncontent" />
+
+<block name="content">
+<div class="well">
+	<form action="<{:U('Admin/do_update_group')}>" method="post">
+		<input type="hidden" name="id" value="<{$role.id}>">
+		<label>组名</label>
+		<input type="text" name="role_name" data-old-value="<{$role.role_name}>" value="<{$role.role_name}>">
+		<label>上级</label>
+		<select data-old-select="<{$role.pid}>" name="pid">
+			<option value="0" <eq name="role.pid" value="0">selected</eq> >顶级</option>
+			<volist name="top_group" id="one"> 
+			<option <eq name="role.pid" value="$one['id']">selected</eq> value="<{$one.id}>"><{$one.role_name}></option>
+			</volist>
+		</select>
+		<button id="do-update-user-group" class="btn btn-primary">修改</button>
+	</form>
+</div>
+</block>
+<block name="diyjs">
+<script type="text/javascript">
+	var nameObj = $('input[name="role_name"]');
+	nameObj.blur(function(){
+		var name = $(this).val();
+		var oldName = $(this).attr('data-old-value');
+		if(!name){
+			layer.tips('组名不能为空',nameObj);
+			$('#do-update-user-group').attr('disabled',true);
+			return false;
+		}
+
+		if(name != oldName){
+			$.post('<{:U("Admin/check_user_group_name")}>',{group_name:name},function(msg){
+				layer.tips(msg.des,nameObj);
+				if(msg.error_code == 0){
+					$('#do-update-user-group').removeAttr('disabled');
+
+				}else{
+					$('#do-update-user-group').attr('disabled',true);
+				}
+			},'json');
+		}
+	});
+</script>
+</block>

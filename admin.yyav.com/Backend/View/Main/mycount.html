@@ -1,0 +1,61 @@
+<extend name="Template:commoncontent" />
+
+
+<block name="content">
+    <div>
+
+        <div class="well" style="width: 50%;margin: 50px auto;">
+            <table class="table table-bordered" >
+                <caption><h2><{$my_count['name']}>的基本信息</h2></caption>
+                <tr>
+                    <td style="text-align: right">昵称:</td><td><{$my_count['nic_name']}></td>
+                    <td style="text-align: right">邮箱:</td><td><{$my_count['email']}></td>
+                </tr>
+                <tr>
+                    <td style="text-align: right">角色:</td>
+                    <td >
+                        <if condition="$my_count['is_sys'] eq 1">系统用户
+                        <else />普通用户
+                        </if>
+                    </td>
+                    <td style="text-align: right">状态:</td>
+                    <td>
+                        <if condition="$my_count['status'] eq 1">正常
+                            <else />异常
+                        </if>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: right">注册时间:</td><td><{$my_count['reg_time']|date='Y-m-d H:i:s',###}></td>
+                    <td style="text-align: right">上次登录时间:</td><td><{:cookie('last_time')}></td>
+                </tr>
+                <tr><td style="text-align: right">上次登录IP:</td><td colspan="3"><{:cookie('last_ip')}></td></tr>
+
+            </table>
+            <div style="text-align: center;">
+                <button id="update-password" class="btn btn-info btn-radius"><i class="icon-pencil"></i>修改基本信息</button>
+            </div>
+        </div>
+    </div>
+</block>
+
+<block name="diyjs">
+    <script type="text/javascript">
+        $('#update-password').click(function(){
+            layer.open({
+                type: 2,
+                skin: 'layui-layer-rim',//加上边框
+                area: ['380px','300px'],
+                offset: '170px',
+                content: "/backend/main/update_password",
+                title:'<strong>修改基本信息</strong>',
+                shift: 5,
+//                end: refresh
+            });
+        });
+
+        function refresh(){
+            window.location.href=window.location.href;
+        }
+    </script>
+</block>

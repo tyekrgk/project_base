@@ -1,0 +1,120 @@
+<extend name="Template:commoncontent" />
+<block name="style">
+
+<style type="text/css">
+	.role-style{padding: 5px;overflow: auto;}
+	.top-role-style{font-weight: 700;color:black;font-size: 16px;width:300px;}
+	.one-child{float: left;margin-left: 10px;}
+	.role{border: 1px solid #ccc;overflow: auto;padding: 3px;}
+    .user-style{font-weight: 700;font-size: 20px;color: #003bb3;}
+</style>
+</block>
+
+<block name="content">
+	<div class="well">
+		<form class="form-horizontal" id="user-role-form">
+			<label><span class="user-style"><{$user_nic_name}></span>的角色：</label>
+            <input type="hidden" name="user_id" value="<{$user_id}>">
+			<div class="role">
+			<span><input type="checkbox" id="select-all">所有</span>
+			<volist name="roles" id="one">
+			<div class="role-style">
+				<div class="checkbox top-role-style"><label>
+                    <input data-id="<{$one.id}>" name="role_ids[]" value="<{$one.id}>" type="checkbox" <if condition="in_array($one['id'],$role_ids)">checked</if>><{$one.role_name}>
+                </label></div>
+
+				<div class="child-role-style">
+					<volist name="one.child_group" id="o">
+						<div class="checkbox one-child"><label>
+                            <input name="role_ids[]" value="<{$o.id}>" type="checkbox" <if condition="in_array($o['id'],$role_ids)">checked</if>><{$o.role_name}>
+                        </label></div>
+					</volist>
+				</div>
+			</div>
+			<div style="clear:both;"></div>
+			</volist>
+			</div>
+            <br/>
+            <div style="text-align: center">
+			    <button  type="submit" class="btn btn-info btn-radius" style="width: 120px;">保存</button>
+            <div>
+		</form>
+	</div>
+</block>
+
+<block name="diyjs">
+<script type="text/javascript">
+    var index = parent.layer.getFrameIndex(window.name);
+    $('#user-role-form').submit(function () {
+        var data = $('#user-role-form').serialize();
+        $.post('/backend/admin/do_user_role',data, function(msg){
+            if(msg.error_code == 0){
+                //成功
+                layer.msg(msg.des,function(){
+                    parent.layer.close(index);
+                });
+            }else{
+                layer.msg(msg.des);
+            }
+        },'json');
+        return false;
+    });
+	//选中所有
+	$('#select-all').click(function(){
+		if($(this).attr('checked')=='checked'){
+			$('input[name="role_ids[]"]').attr('checked','checked');
+		}else{
+			$('input[name="role_ids[]"]').removeAttr('checked');
+		}
+	});
+
+	//点击顶级
+	$('.top-role-style').find('input[name="role_ids[]"]').click(function(){
+		var child = $(this).parents('.role-style').find('.child-role-style').find('input[name="role_ids[]"]');
+		if($(this).attr('checked') == 'checked'){
+			child.attr('checked','checked');
+			//判断全局是否都选中
+			checkAllIsChecked();
+		}else{
+			child.removeAttr('checked');
+			//移除全局选中
+			$('#select-all').removeAttr('checked');
+		}
+	});
+
+	//点击二级角色
+	$('.child-role-style').find('input[name="role_ids[]"]').click(function(){
+		var parentSelectAll = $(this).parents('.role-style').find('.top-role-style').find('input[name="role_ids[]"]');
+
+        if($(this).attr('checked') == 'checked'){
+            //检查所在二级列表是否全选中
+            var listCheckedLength = $(this).parents('.child-role-style').find('input').length;
+            var listSelectedCheckdedLength = $(this).parents('.child-role-style').find('input:checked').length;
+            if(listCheckedLength == listSelectedCheckdedLength){
+                parentSelectAll.attr('checked','checked');
+                //判断全局是否都选中
+                checkAllIsChecked();
+            }
+        }else{
+            //移除上级所有选中
+            parentSelectAll.removeAttr('checked');
+            //移除全局选中
+            $('#select-all').removeAttr('checked');
+        }
+
+
+
+	});
+	//判断全局是否选中
+	function checkAllIsChecked(){
+		var allCheckedLength = $('input[name="role_ids[]"]').length;
+		var allSelectCheckedLength = $('input[name="role_ids[]"]:checked').length;
+
+		if(allCheckedLength == allSelectCheckedLength){
+			$("#select-all").attr('checked','checked');
+		}else{
+			$('#select-all').removeAttr('checked');
+		}
+	}
+</script>
+</block>

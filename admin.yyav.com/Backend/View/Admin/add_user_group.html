@@ -1,0 +1,70 @@
+<extend name="Template:commoncontent" />
+<block name="style">
+<style type="text/css">
+	.form{margin-left: 10px;text-align: center;}
+</style>
+</block>
+<block name="content">
+	<div class="well">
+	<div class="form">
+		<label>组名</label>
+		<input type="text" name="group_name" id="group-name" placeholder="输入组名" >
+		<label>所属父级</label>
+		<select name="pid">
+			<option value="0">顶级</option>
+			<volist name="top_group" id="one">
+				<option value="<{$one.id}>"><{$one.role_name}></option>
+			</volist>
+		</select>
+		<label></label>
+		<button disabled id="do-add-user-group" class="btn btn-primary">提交</button>
+	</div>
+	</div>
+</block>
+<block name="diyjs">
+	<script type="text/javascript">
+		$('#do-add-user-group').click(function(){
+			var groupName = $('input[name="group_name"]').val();
+			var pid = $('select[name="pid"]').val();
+			if(!groupName){
+				layer.tips('组名不能为空','#group-name');
+				return false;
+			}
+			$.post('<{:U("Admin/do_add_user_group")}>',
+					{group_name:groupName,pid:pid},
+					function(msg){
+						layer.msg(msg.des);
+						//添加成功且是顶级时当前页面节点添加
+						if(msg.error_code == 0 ){
+							if(pid == 0){
+								var str = '<option value="'+msg.data+'">'+groupName+'</option>';
+								$('select[name="pid"]').append(str);
+							}
+							
+							//清楚当前用户输入
+							$('input[name="group_name"]').attr('value','');
+						}
+                    },'json');
+		});
+
+
+		$('input[name="group_name"]').blur(function(){
+			var groupName = $(this).val();
+			if(!groupName){
+				layer.tips('组名不能为空',$(this));
+				return false;
+			}
+
+			$.post('<{:U("Admin/check_user_group_name")}>',{group_name:groupName},
+				function(msg){
+					layer.tips(msg.des,'#group-name');
+					if(msg.error_code == 0){
+						$('#do-add-user-group').removeAttr('disabled');
+					}else{
+						$('#do-add-user-group').attr('disabled',true);
+					}
+				},'json');
+
+		})
+	</script>
+</block>

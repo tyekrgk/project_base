@@ -1,0 +1,1051 @@
+[ 2016-09-11T12:05:04+08:00 ] 127.0.0.1 /Sodo/get_articles_by_page?page=1&pageSize=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `how_article` [ RunTime:0.0290s ]
+SQL: SELECT * FROM `how_article` WHERE `is_deleted` = 0 ORDER BY time desc LIMIT 0,2   [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `how_article` WHERE `is_deleted` = 0 LIMIT 1   [ RunTime:0.0050s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `pingce_author` [ RunTime:0.0060s ]
+SQL: SELECT `name` FROM `pingce_author` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SELECT `name` FROM `pingce_author` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-09-11T12:05:13+08:00 ] 127.0.0.1 /Sodo/get_article_by_id?id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `how_article` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `how_article` WHERE `is_deleted` = 0 AND `id` = 5 LIMIT 1   [ RunTime:0.0090s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-11T12:11:00+08:00 ] 127.0.0.1 /Sodo/get_article_by_id?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `how_article` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `how_article` WHERE `is_deleted` = 0 AND `id` = 1 LIMIT 1   [ RunTime:0.0070s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-11T12:11:18+08:00 ] 127.0.0.1 /Sodo/get_article_by_id?id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `how_article` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `how_article` WHERE `is_deleted` = 0 AND `id` = 5 LIMIT 1   [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-11T12:13:10+08:00 ] 127.0.0.1 /Sodo/get_article_by_id?id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `how_article` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `how_article` WHERE `is_deleted` = 0 AND `id` = 5 LIMIT 1   [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-11T12:14:11+08:00 ] 127.0.0.1 /Sodo/get_article_by_id?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `how_article` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `how_article` WHERE `is_deleted` = 0 AND `id` = 8 LIMIT 1   [ RunTime:0.0080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-11T12:19:14+08:00 ] 127.0.0.1 /Sodo/get_article_by_id?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `how_article` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `how_article` WHERE `is_deleted` = 0 AND `id` = 8 LIMIT 1   [ RunTime:0.0050s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `pingce_author` [ RunTime:0.0060s ]
+SQL: SELECT `name` FROM `pingce_author` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-11T12:19:32+08:00 ] 127.0.0.1 /Sodo/get_article_by_id?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `how_article` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `how_article` WHERE `is_deleted` = 0 AND `id` = 8 LIMIT 1   [ RunTime:0.0050s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `pingce_author` [ RunTime:0.0040s ]
+SQL: SELECT `name` FROM `pingce_author` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-11T12:20:17+08:00 ] 127.0.0.1 /Sodo/get_article_by_id?id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `how_article` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `how_article` WHERE `is_deleted` = 0 AND `id` = 5 LIMIT 1   [ RunTime:0.0050s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `pingce_author` [ RunTime:0.0050s ]
+SQL: SELECT `name` FROM `pingce_author` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-11T12:40:24+08:00 ] 127.0.0.1 /Sodo/get_article_by_id?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `how_article` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `how_article` WHERE `is_deleted` = 0 AND `id` = 8 LIMIT 1   [ RunTime:0.0060s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `pingce_author` [ RunTime:0.0060s ]
+SQL: SELECT `name` FROM `pingce_author` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0060s ]
+SQL: SELECT `title`,`img` FROM `how_article` WHERE `author` = 0  [ RunTime:0.0060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-11T12:40:40+08:00 ] 127.0.0.1 /Sodo/get_article_by_id?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `how_article` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `how_article` WHERE `is_deleted` = 0 AND `id` = 3 LIMIT 1   [ RunTime:0.0060s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `pingce_author` [ RunTime:0.0050s ]
+SQL: SELECT `name` FROM `pingce_author` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SELECT `title`,`img` FROM `how_article` WHERE `author` = 0  [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-11T12:46:58+08:00 ] 127.0.0.1 /Sodo/get_article_by_id?id=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `how_article` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `how_article` WHERE `is_deleted` = 0 AND `id` = 7 LIMIT 1   [ RunTime:0.0090s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `pingce_author` [ RunTime:0.0090s ]
+SQL: SELECT `name` FROM `pingce_author` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0090s ]
+SQL: SELECT `id`,`title`,`img` FROM `how_article` WHERE `author` = 0 ORDER BY time desc LIMIT 0,3   [ RunTime:0.0090s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-11T12:47:11+08:00 ] 127.0.0.1 /Sodo/get_article_by_id?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `how_article` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `how_article` WHERE `is_deleted` = 0 AND `id` = 3 LIMIT 1   [ RunTime:0.0090s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `pingce_author` [ RunTime:0.0090s ]
+SQL: SELECT `name` FROM `pingce_author` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT `id`,`title`,`img` FROM `how_article` WHERE `author` = 0 ORDER BY time desc LIMIT 0,3   [ RunTime:0.0080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-11T12:48:45+08:00 ] 127.0.0.1 /Sodo/get_article_by_id?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `how_article` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `how_article` WHERE `is_deleted` = 0 AND `id` = 3 LIMIT 1   [ RunTime:0.0060s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `pingce_author` [ RunTime:0.0050s ]
+SQL: SELECT `name` FROM `pingce_author` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title`,`img` FROM `how_article` WHERE `author` = 0 ORDER BY time desc LIMIT 3   [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-09-11T12:51:42+08:00 ] 127.0.0.1 /Sodo/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `how_article` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title`,`img` FROM `how_article` WHERE `author` = 7 ORDER BY time desc LIMIT 0,3   [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-11T12:53:10+08:00 ] 127.0.0.1 /Sodo/get_article_by_id?id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `how_article` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `how_article` WHERE `is_deleted` = 0 AND `id` = 5 LIMIT 1   [ RunTime:0.0060s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `pingce_author` [ RunTime:0.0060s ]
+SQL: SELECT `name` FROM `pingce_author` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title`,`img` FROM `how_article` WHERE `author` = 0 ORDER BY time desc LIMIT 0,3   [ RunTime:0.0060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-11T12:54:57+08:00 ] 127.0.0.1 /Sodo/get_article_by_id?id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `how_article` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `how_article` WHERE `is_deleted` = 0 AND `id` = 5 LIMIT 1   [ RunTime:0.0080s ]
+SQL: SELECT `id`,`title`,`img` FROM `how_article` WHERE `author` = 7 ORDER BY time desc LIMIT 0,3   [ RunTime:0.0080s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `pingce_author` [ RunTime:0.0080s ]
+SQL: SELECT `name` FROM `pingce_author` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-11T12:56:32+08:00 ] 127.0.0.1 /Sodo/get_article_by_id?id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `how_article` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `how_article` WHERE `is_deleted` = 0 AND `id` = 5 LIMIT 1   [ RunTime:0.0090s ]
+SQL: SELECT `id`,`title`,`img` FROM `how_article` WHERE `author` = 7 ORDER BY time desc LIMIT 0,3   [ RunTime:0.0090s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `pingce_author` [ RunTime:0.0090s ]
+SQL: SELECT `name` FROM `pingce_author` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-11T12:57:44+08:00 ] 127.0.0.1 /Sodo/get_article_by_id?id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `how_article` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `how_article` WHERE `is_deleted` = 0 AND `id` = 5 LIMIT 1   [ RunTime:0.0060s ]
+SQL: SELECT `id`,`title`,`img` FROM `how_article` WHERE `author` = 7 ORDER BY time desc LIMIT 0,3   [ RunTime:0.0060s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `pingce_author` [ RunTime:0.0070s ]
+SQL: SELECT `name` FROM `pingce_author` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-09-11T12:58:59+08:00 ] 127.0.0.1 /Sodo/get_article_by_id?id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `how_article` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `how_article` WHERE `is_deleted` = 0 AND `id` = 5 LIMIT 1   [ RunTime:0.0060s ]
+SQL: SELECT `id`,`title`,`img` FROM `how_article` WHERE `author` = 7 ORDER BY time desc LIMIT 0,3   [ RunTime:0.0050s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `pingce_author` [ RunTime:0.0050s ]
+SQL: SELECT `name` FROM `pingce_author` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-11T13:02:02+08:00 ] 127.0.0.1 /Sodo/get_article_by_id?id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `how_article` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `how_article` WHERE `is_deleted` = 0 AND `id` = 5 LIMIT 1   [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title`,`img` FROM `how_article` WHERE `author` = 7 ORDER BY time desc LIMIT 0,3   [ RunTime:0.0040s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `pingce_author` [ RunTime:0.0040s ]
+SQL: SELECT `name` FROM `pingce_author` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-11T13:13:17+08:00 ] 127.0.0.1 /Sodo/get_article_by_id?id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `how_article` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `how_article` WHERE `is_deleted` = 0 AND `id` = 5 LIMIT 1   [ RunTime:0.0080s ]
+SQL: SELECT `id`,`title`,`img` FROM `how_article` WHERE `author` = 7 ORDER BY time desc LIMIT 0,3   [ RunTime:0.0090s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `pingce_author` [ RunTime:0.0090s ]
+SQL: SELECT `name` FROM `pingce_author` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-11T13:13:59+08:00 ] 127.0.0.1 /Sodo/get_article_by_id?id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `how_article` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `how_article` WHERE `is_deleted` = 0 AND `id` = 5 LIMIT 1   [ RunTime:0.0060s ]
+SQL: SELECT `id`,`title`,`img` FROM `how_article` WHERE `author` = 7 ORDER BY time desc LIMIT 0,3   [ RunTime:0.0060s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `pingce_author` [ RunTime:0.0060s ]
+SQL: SELECT `name` FROM `pingce_author` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-11T13:14:43+08:00 ] 127.0.0.1 /Sodo/get_article_by_id?id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `how_article` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `how_article` WHERE `is_deleted` = 0 AND `id` = 5 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title`,`img` FROM `how_article` WHERE `author` = 7 ORDER BY time desc LIMIT 0,3   [ RunTime:0.0050s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `pingce_author` [ RunTime:0.0060s ]
+SQL: SELECT `name` FROM `pingce_author` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-11T13:16:21+08:00 ] 127.0.0.1 /Sodo/get_article_by_id?id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `how_article` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `how_article` WHERE `is_deleted` = 0 AND `id` = 5 LIMIT 1   [ RunTime:0.0080s ]
+SQL: SELECT `id`,`title`,`img` FROM `how_article` WHERE `author` = 7 ORDER BY time desc LIMIT 0,3   [ RunTime:0.0070s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `pingce_author` [ RunTime:0.0090s ]
+SQL: SELECT `name` FROM `pingce_author` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-09-11T13:16:53+08:00 ] 127.0.0.1 /Sodo/get_article_by_id?id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `how_article` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `how_article` WHERE `is_deleted` = 0 AND `id` = 5 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title`,`img` FROM `how_article` WHERE `author` = 7 ORDER BY time desc LIMIT 0,3   [ RunTime:0.0040s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `pingce_author` [ RunTime:0.0070s ]
+SQL: SELECT `name` FROM `pingce_author` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0130s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-11T13:21:17+08:00 ] 127.0.0.1 /Sodo/get_article_by_id?id=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `how_article` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `how_article` WHERE `is_deleted` = 0 AND `id` = 7 LIMIT 1   [ RunTime:0.0070s ]
+SQL: SELECT `id`,`title`,`img` FROM `how_article` WHERE `author` = 8 ORDER BY time desc LIMIT 0,3   [ RunTime:0.0080s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `pingce_author` [ RunTime:0.0080s ]
+SQL: SELECT `name` FROM `pingce_author` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-11T13:26:57+08:00 ] 127.0.0.1 /Sodo/get_article_by_id?id=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `how_article` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `how_article` WHERE `is_deleted` = 0 AND `id` = 7 LIMIT 1   [ RunTime:0.0060s ]
+SQL: SELECT `id`,`title`,`img` FROM `how_article` WHERE `author` = 8 ORDER BY time desc LIMIT 0,3   [ RunTime:0.0050s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `pingce_author` [ RunTime:0.0060s ]
+SQL: SELECT `name` FROM `pingce_author` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-11T13:39:01+08:00 ] 127.0.0.1 /Sodo/get_article_by_id?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `how_article` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `how_article` WHERE `is_deleted` = 0 AND `id` = 2 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title`,`img` FROM `how_article` WHERE `author` = 8 ORDER BY time desc LIMIT 0,3   [ RunTime:0.0040s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `pingce_author` [ RunTime:0.0050s ]
+SQL: SELECT `name` FROM `pingce_author` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-11T14:41:30+08:00 ] 127.0.0.1 /Sodo/get_article_by_id?id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `how_article` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `how_article` WHERE `is_deleted` = 0 AND `id` = 5 LIMIT 1   [ RunTime:0.0080s ]
+SQL: SELECT `id`,`title`,`img` FROM `how_article` WHERE `author` = 7 ORDER BY time desc LIMIT 0,3   [ RunTime:0.0070s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `pingce_author` [ RunTime:0.0070s ]
+SQL: SELECT `name` FROM `pingce_author` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0070s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-11T14:44:57+08:00 ] 127.0.0.1 /Sodo/get_article_by_id?id=9
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `how_article` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `how_article` WHERE `is_deleted` = 0 AND `id` = 9 LIMIT 1   [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title`,`img` FROM `how_article` WHERE `author` = 9 ORDER BY time desc LIMIT 0,3   [ RunTime:0.0040s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `pingce_author` [ RunTime:0.0040s ]
+SQL: SELECT `name` FROM `pingce_author` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-11T14:52:06+08:00 ] 127.0.0.1 /Sodo/get_article_by_id?id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `how_article` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `how_article` WHERE `is_deleted` = 0 AND `id` = 5 LIMIT 1   [ RunTime:0.0060s ]
+SQL: SELECT `id`,`title`,`img` FROM `how_article` WHERE `author` = 7 ORDER BY time desc LIMIT 0,3   [ RunTime:0.0050s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `pingce_author` [ RunTime:0.0050s ]
+SQL: SELECT `name` FROM `pingce_author` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-11T14:56:53+08:00 ] 127.0.0.1 /Sodo/get_article_by_id?id=9
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `how_article` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `how_article` WHERE `is_deleted` = 0 AND `id` = 9 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title`,`img` FROM `how_article` WHERE `author` = 9 ORDER BY time desc LIMIT 0,3   [ RunTime:0.0060s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `pingce_author` [ RunTime:0.0050s ]
+SQL: SELECT `name` FROM `pingce_author` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-11T14:57:01+08:00 ] 127.0.0.1 /Sodo/get_article_by_id?id=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `how_article` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `how_article` WHERE `is_deleted` = 0 AND `id` = 6 LIMIT 1   [ RunTime:0.0090s ]
+SQL: SELECT `id`,`title`,`img` FROM `how_article` WHERE `author` = 7 ORDER BY time desc LIMIT 0,3   [ RunTime:0.0090s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `pingce_author` [ RunTime:0.0090s ]
+SQL: SELECT `name` FROM `pingce_author` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0090s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-11T14:59:02+08:00 ] 127.0.0.1 /Sodo/get_article_by_id?id=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `how_article` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `how_article` WHERE `is_deleted` = 0 AND `id` = 4 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title`,`img` FROM `how_article` WHERE `author` = 7 ORDER BY time desc LIMIT 0,3   [ RunTime:0.0050s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `pingce_author` [ RunTime:0.0050s ]
+SQL: SELECT `name` FROM `pingce_author` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-09-11T15:00:19+08:00 ] 127.0.0.1 /Sodo/get_article_by_id?id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `how_article` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `how_article` WHERE `is_deleted` = 0 AND `id` = 5 LIMIT 1   [ RunTime:0.0080s ]
+SQL: SELECT `id`,`title`,`img` FROM `how_article` WHERE `author` = 7 ORDER BY time desc LIMIT 0,3   [ RunTime:0.0050s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `pingce_author` [ RunTime:0.0050s ]
+SQL: SELECT `name` FROM `pingce_author` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-11T15:02:03+08:00 ] 127.0.0.1 /Sodo/get_article_by_id?id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `how_article` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `how_article` WHERE `is_deleted` = 0 AND `id` = 5 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title`,`img` FROM `how_article` WHERE `author` = 7 ORDER BY time desc LIMIT 0,3   [ RunTime:0.0050s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `pingce_author` [ RunTime:0.0060s ]
+SQL: SELECT `name` FROM `pingce_author` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-11T15:02:23+08:00 ] 127.0.0.1 /Sodo/get_article_by_id?id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `how_article` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `how_article` WHERE `is_deleted` = 0 AND `id` = 5 LIMIT 1   [ RunTime:0.0060s ]
+SQL: SELECT `id`,`title`,`img` FROM `how_article` WHERE `author` = 7 ORDER BY time desc LIMIT 0,3   [ RunTime:0.0050s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `pingce_author` [ RunTime:0.0070s ]
+SQL: SELECT `name` FROM `pingce_author` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-11T15:02:26+08:00 ] 127.0.0.1 /Sodo/get_article_by_id?id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `how_article` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `how_article` WHERE `is_deleted` = 0 AND `id` = 8 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title`,`img` FROM `how_article` WHERE `author` = 9 ORDER BY time desc LIMIT 0,3   [ RunTime:0.0130s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `pingce_author` [ RunTime:0.0060s ]
+SQL: SELECT `name` FROM `pingce_author` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-11T15:02:33+08:00 ] 127.0.0.1 /Sodo/get_article_by_id?id=30
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `how_article` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `how_article` WHERE `is_deleted` = 0 AND `id` = 30 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title`,`img` FROM `how_article` WHERE `author` = null ORDER BY time desc LIMIT 0,3   [ RunTime:0.0040s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `pingce_author` [ RunTime:0.0050s ]
+SQL: SELECT `name` FROM `pingce_author` WHERE `id` = null LIMIT 1   [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-11T15:02:41+08:00 ] 127.0.0.1 /Sodo/get_article_by_id?id=30
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `how_article` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `how_article` WHERE `is_deleted` = 0 AND `id` = 30 LIMIT 1   [ RunTime:0.0080s ]
+SQL: SELECT `id`,`title`,`img` FROM `how_article` WHERE `author` = null ORDER BY time desc LIMIT 0,3   [ RunTime:0.0080s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `pingce_author` [ RunTime:0.0080s ]
+SQL: SELECT `name` FROM `pingce_author` WHERE `id` = null LIMIT 1   [ RunTime:0.0070s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-11T15:02:45+08:00 ] 127.0.0.1 /Sodo/get_article_by_id?id=30
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `how_article` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `how_article` WHERE `is_deleted` = 0 AND `id` = 30 LIMIT 1   [ RunTime:0.0060s ]
+SQL: SELECT `id`,`title`,`img` FROM `how_article` WHERE `author` = null ORDER BY time desc LIMIT 0,3   [ RunTime:0.0060s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `pingce_author` [ RunTime:0.0090s ]
+SQL: SELECT `name` FROM `pingce_author` WHERE `id` = null LIMIT 1   [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-11T15:03:22+08:00 ] 127.0.0.1 /Sodo/get_article_by_id?id=30
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `how_article` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `how_article` WHERE `is_deleted` = 0 AND `id` = 30 LIMIT 1   [ RunTime:0.0060s ]
+SQL: SELECT `id`,`title`,`img` FROM `how_article` WHERE `author` = null ORDER BY time desc LIMIT 0,3   [ RunTime:0.0060s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `pingce_author` [ RunTime:0.0070s ]
+SQL: SELECT `name` FROM `pingce_author` WHERE `id` = null LIMIT 1   [ RunTime:0.0060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-11T15:04:20+08:00 ] 127.0.0.1 /Sodo/get_article_by_id?id=30
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `how_article` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `how_article` WHERE `is_deleted` = 0 AND `id` = 30 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title`,`img` FROM `how_article` WHERE `author` = null ORDER BY time desc LIMIT 0,3   [ RunTime:0.0040s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `pingce_author` [ RunTime:0.0040s ]
+SQL: SELECT `name` FROM `pingce_author` WHERE `id` = null LIMIT 1   [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-11T15:04:59+08:00 ] 127.0.0.1 /Sodo/get_article_by_id?id=30
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `how_article` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `how_article` WHERE `is_deleted` = 0 AND `id` = 30 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title`,`img` FROM `how_article` WHERE `author` = null ORDER BY time desc LIMIT 0,3   [ RunTime:0.0040s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `pingce_author` [ RunTime:0.0060s ]
+SQL: SELECT `name` FROM `pingce_author` WHERE `id` = null LIMIT 1   [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-11T15:05:26+08:00 ] 127.0.0.1 /Sodo/get_article_by_id?id=30
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `how_article` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `how_article` WHERE `is_deleted` = 0 AND `id` = 30 LIMIT 1   [ RunTime:0.0090s ]
+SQL: SELECT `id`,`title`,`img` FROM `how_article` WHERE `author` = null ORDER BY time desc LIMIT 0,3   [ RunTime:0.0080s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `pingce_author` [ RunTime:0.0080s ]
+SQL: SELECT `name` FROM `pingce_author` WHERE `id` = null LIMIT 1   [ RunTime:0.0070s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-11T15:08:54+08:00 ] 127.0.0.1 /Sodo/get_article_by_id?id=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `how_article` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `how_article` WHERE `is_deleted` = 0 AND `id` = 11 LIMIT 1   [ RunTime:0.0060s ]
+SQL: SELECT `id`,`title`,`img` FROM `how_article` WHERE `author` = 6 ORDER BY time desc LIMIT 0,3   [ RunTime:0.0050s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `pingce_author` [ RunTime:0.0060s ]
+SQL: SELECT `name` FROM `pingce_author` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-11T15:34:28+08:00 ] 127.0.0.1 /Sodo/get_article_by_id?id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `how_article` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `how_article` WHERE `is_deleted` = 0 AND `id` = 5 LIMIT 1   [ RunTime:0.0060s ]
+SQL: SELECT `id`,`title`,`img` FROM `how_article` WHERE `author` = 7 ORDER BY time desc LIMIT 0,3   [ RunTime:0.0060s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `pingce_author` [ RunTime:0.0060s ]
+SQL: SELECT `name` FROM `pingce_author` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-11T15:34:44+08:00 ] 127.0.0.1 /Sodo/get_article_by_id?id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `how_article` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `how_article` WHERE `is_deleted` = 0 AND `id` = 5 LIMIT 1   [ RunTime:0.0080s ]
+SQL: SELECT `id`,`title`,`img` FROM `how_article` WHERE `author` = 7 ORDER BY time desc LIMIT 0,3   [ RunTime:0.0070s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `pingce_author` [ RunTime:0.0080s ]
+SQL: SELECT `name` FROM `pingce_author` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0070s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-11T15:36:54+08:00 ] 127.0.0.1 /Sodo/get_article_by_id?id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `how_article` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `how_article` WHERE `is_deleted` = 0 AND `id` = 5 LIMIT 1   [ RunTime:0.0060s ]
+SQL: SELECT `id`,`title`,`img` FROM `how_article` WHERE `author` = 7 ORDER BY time desc LIMIT 0,3   [ RunTime:0.0060s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `pingce_author` [ RunTime:0.0060s ]
+SQL: SELECT `name` FROM `pingce_author` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-11T15:36:57+08:00 ] 127.0.0.1 /Sodo/get_article_by_id?id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `how_article` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `how_article` WHERE `is_deleted` = 0 AND `id` = 5 LIMIT 1   [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title`,`img` FROM `how_article` WHERE `author` = 7 ORDER BY time desc LIMIT 0,3   [ RunTime:0.0040s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `pingce_author` [ RunTime:0.0050s ]
+SQL: SELECT `name` FROM `pingce_author` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-11T16:01:29+08:00 ] 127.0.0.1 /Sodo/get_articles_by_page?page=1&pageSize=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `how_article` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `how_article` WHERE `is_deleted` = 0 ORDER BY time desc LIMIT 0,2   [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `how_article` WHERE `is_deleted` = 0 LIMIT 1   [ RunTime:0.0050s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `pingce_author` [ RunTime:0.0060s ]
+SQL: SELECT `name` FROM `pingce_author` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0060s ]
+SQL: SELECT `name` FROM `pingce_author` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-11T16:01:31+08:00 ] 127.0.0.1 /Sodo/get_articles_by_page?page=6&pageSize=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `how_article` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `how_article` WHERE `is_deleted` = 0 ORDER BY time desc LIMIT 10,2   [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `how_article` WHERE `is_deleted` = 0 LIMIT 1   [ RunTime:0.0090s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `pingce_author` [ RunTime:0.0080s ]
+SQL: SELECT `name` FROM `pingce_author` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0090s ]
+SQL: SELECT `name` FROM `pingce_author` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0070s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-11T16:19:29+08:00 ] 127.0.0.1 /Sodo/get_articles_by_page?page=1&pageSize=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `how_article` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `how_article` WHERE `is_deleted` = 0 ORDER BY time desc LIMIT 0,2   [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `how_article` WHERE `is_deleted` = 0 LIMIT 1   [ RunTime:0.0040s ]
+NOTIC: [2] Illegal string offset 'DB_NAME' D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\workFile\vshareweb\framecore\Library\Think\Model.class.php 第 1432 行.
+SQL: SHOW COLUMNS FROM `pingce_author` [ RunTime:0.0050s ]
+SQL: SELECT `name` FROM `pingce_author` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SELECT `name` FROM `pingce_author` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

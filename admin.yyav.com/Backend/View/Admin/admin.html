@@ -1,0 +1,124 @@
+<extend name="Template:commoncontent" />
+
+<block name="content">
+	<div class="container-fluid">
+    	<div class="row-fluid">
+      		<div class="row-fluid">
+      			<div class="btn-toolbar">
+				    <button id="add-user-group" class="btn btn-info btn-radius">添加管理员</button>
+				</div>
+				<div>
+					<form class="form-inline" method="get" action="/index.php/Backend/admin/admin" >
+						<input type="text" name="keyword" placeholder="管理员真实名字/邮箱" value="<{:I('get.keyword')}>" > <button class="btn btn-info">搜索</button>
+					</form>
+				</div>
+				
+				<div class="well">
+					<table class="table">
+						<tr>
+							<th>序号</th>
+							<th>ID</th>
+							<th>昵称</th>
+							<th>真实名字</th>
+							<th>登陆邮箱</th>
+							<th>角色</th>
+							<th>最后登陆时间</th>
+							<th>最后登陆IP</th>
+							<th>状态</th>
+							<th>操作</th>
+						</tr>
+						<volist name="users" id="one" key="k">
+							<tr>
+								<td><{$k}></td>
+								<td><{$one.id}></td>
+								<td><{$one.nic_name}></td>
+								<td><{$one.name}></td>
+								<td><{$one.email}></td>
+								<td>管理员</td>
+								<td><{$one.last_login_time|date='Y-m-d H:i:s',###}></td>
+								<td><{$one.last_login_ip|long2ip}></td>
+								<td>正常</td>
+								<td>
+                                                                    <a class="update-user" data-id="<{$one.id}>" title="编辑" href="javascript:;"><i class="icon-pencil"></i></a> | 
+                                                                    <a title="删除" data-id="<{$one.id}>" class="delete-user" href="javascript:;"><i class="icon-trash"></i></a> | 
+                                                                    <a title="角色" class="do-user-role" data-id="<{$one.id}>" href="javascript:;"><i class="icon-align-justify"></i></a>
+                                                                </td>
+							</tr>
+						</volist>
+					</table>
+				</div>
+				<{$page}>
+      		</div>
+      	</div>
+    </div>
+</block>
+
+<block name="diyjs">
+<script type="text/javascript">
+
+	//新增管理员
+	$('#add-user-group').click(function(){
+		layer.open({
+		    type: 2,
+		    skin: 'layui-layer-rim', //加上边框
+		    area: ['620px', '540px'], //宽高
+		    content: "<{:U('Admin/add_admin')}>",
+		    title:'<strong>新增管理员</strong>',
+		    shift: 5
+		    // end:refresh //回调函数
+		});
+	});
+
+	//删除管理员
+	$('.delete-user').click(function(){
+		var id = $(this).attr('data-id');
+		layer.confirm('确认删除？',{icon: 3, title:'提示'}, function(index){
+		    layer.close(index);
+		    deleteUser(id);
+		});
+	});
+
+	//执行删除函数
+	function deleteUser(id){
+		$.post('<{:U("/index.php/Admin/do_delete_admin")}>',{id:id},function(msg){
+			layer.msg(msg.des);
+			if(msg.error_code == 0){
+				$('a[data-id="'+id+'"]').parents('tr').remove();
+			}
+		},'json');
+	}
+
+	//编辑管理员
+	$('.update-user').click(function(){
+		var id = $(this).attr('data-id');
+		var url = '/index.php?m=backend&c=admin&a=update_admin'+'&id='+id;
+		layer.open({
+			type:2,
+			skin: 'layui-layer-rim', //加上边框
+		    area: ['420px', '240px'], //宽高
+		    content: url,
+		    title:'<strong>编辑管理员</strong>',
+		    shift: 5,
+//		    end:refresh
+		});
+	});
+
+    //用户角色编辑
+    $('.do-user-role').click(function(){
+        var id = $(this).data('id');
+        var url = '/index.php/backend/admin/user_role/user_id/'+id;
+        layer.open({
+            type: 2,
+            skin: 'layui-layer-rim',//加上边框
+            offset:'60px',  //弹框位置
+            area: ['600px','520px'],//宽高
+            content: url,
+            title: '<strong>用户-角色管理</strong>'
+        })
+    });
+
+	function refresh(){
+		window.location.reload();
+	}
+</script>
+</block>

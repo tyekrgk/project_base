@@ -1,0 +1,135 @@
+<extend name="Template:commoncontent" />
+
+
+<block name="style">
+<style type="text/css">
+
+</style>
+</block>
+
+
+<block name="content">
+	<div class="well">
+            <table style="width: 100%">
+               <input type="hidden" name="node_id" value="<if condition='$node'><{$node.id}><else/>0</if>" />
+                <tr>
+                    <td><label>节点名</label><input type="text" name="name" value="<if condition='$node'><{$node.name}></if>"  /></td>
+                    <td><label>中文名称</label><input type="text" name="title" value="<if condition='$node'><{$node.title}></if>"   /></td>
+                </tr>
+                <tr>
+                    <td><label>排序:</label><input type="text" name="sort" value="<if condition='$node'><{$node.sort}></if>" ></td>
+                    <td><label>层级</label><input type="text" name="level" value="<if condition='$node'><{$node.level}></if>" ></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>图标</label>
+                        <input type="text" name="icon" value="<if condition='$node'><{$node.icon}></if>"/>
+                    </td>
+
+                    <td>
+                        <label>状态</label>
+                        <select name="status">
+                            <option value="1">激活</option>
+                            <option value="0" <if condition='$node'><eq name="node.status" value="0">selected</eq></if>>禁用</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>类型</label>
+                        <select name="type">
+                            <option value="controller" <if condition='$node'><eq name="node.type" value="controller">selected</eq></if>>controller</option>
+                            <option value="action" <if condition='$node'><eq name="node.type" value="action">selected</eq></if> >action</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label>父级</label>
+                        <select name="pid">
+                            <option value="0" <if condition='$node'><eq name="node.pid" value="0">selected</eq></if>>顶级</option>
+                            <volist name="p_nodes" id="vo">
+                            <option value="<{$vo['id']}>" <if condition='$node'><eq name="node.pid" value="$vo['id']">selected</eq></if>><{$vo['name']}></option>
+                            </volist>
+                        </select>
+                    </td>
+                </tr>
+                <tr><td >
+                    <label>菜单栏</label>
+                    <select name="is_menu">
+                        <option value="0" <if condition='$node'><eq name="node.is_menu" value="0">selected</eq></if>>否</option>
+                        <option value="1" <if condition='$node'><eq name="node.is_menu" value="1">selected</eq></if>>是</option>
+
+                    </select>
+                </td>
+                    <td >
+                        <label>公共节点</label>
+                        <select name="is_public">
+                            <option value="0" <if condition='$node'><eq name="node.is_public" value="0">selected</eq></if>>否</option>
+                            <option value="1" <if condition='$node'><eq name="node.is_public" value="1">selected</eq></if>>是</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr><td colspan="2" align="center">
+                    <br/><p><button id="btn-form" class="btn btn-info btn-radius" style="width: 120px;">提交</button></p>
+                </td></tr>
+            </table>
+
+	</div>
+</block>
+
+
+<block name="diyjs">
+<script type="text/javascript">
+    //添加节点
+    var index= parent.layer.getFrameIndex(window.name);
+
+	$('#btn-form').on('click',function(){
+        var id =$("input[name='node_id']").val();
+        var name = $("input[name='name']").val();
+        var title = $("input[name='title']").val();
+        var sort = $("input[name='sort']").val();
+        var level = $("input[name='level']").val();
+        var status = $("select[name='status']").val();
+        var is_menu = $("select[name='is_menu']").val();
+        var type = $("select[name='type']").val();
+        var pid = $("select[name='pid']").val();
+        var icon = $("input[name='icon']").val();
+        var is_public = $("select[name='is_public']").val();
+        //alert(sort);return;
+        //alert(is_menu);alert(is_public);alert(status);alert(type);return;
+        if(name == ''|| title == ''|| sort == ''|| level == ''){
+            layer.msg('数据不能为空');
+            return false;
+        }
+        var url='/backend/admin/do_edit_node';
+        if(id != 0){
+            url = '/backend/admin/do_edit_node/node_id/'+id;
+        }
+
+        if(isNum(sort)&&isNum(level)){
+            $.post(url, {name:name,title:title,sort:sort,icon:icon,level:level,is_menu:is_menu,status:status,type:type,pid:pid,is_public:is_public},
+                    function(msg){
+
+                        if(msg.error_code == 0){ //成功
+                            layer.msg(msg.des,function(){
+                                parent.layer.close(index);
+                            });
+                        }else{
+                            layer.msg(msg.des);
+                        }
+                    },'json'
+            );
+        }else{
+            layer.msg('排序、层级均为数字');
+            return false;
+        }
+
+
+
+    });
+
+    function isNum(num){
+        var reg = /^\d*$/;
+        return reg.test(num);
+    }
+</script>
+</block>
